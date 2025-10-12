@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The First Step to Coding Your Future - My Awesome Blog</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7STJzLmrqmkB+3z0qVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -24,7 +27,9 @@
         <section class="single-post-content">
             <article>
                 <h1>The First Step to Coding Your Future</h1>
-                <p class="post-meta">Posted on October 4, 2024 by [Your Name] in <a href="#">Tech</a></p>
+                <img src="https://picsum.photos/seed/codingfuture/800/400"
+                    alt="Abstract image representing coding and future" class="post-hero-image">
+                <p class="post-meta">Posted on October 4, 2024 by Diriba in <a href="#">Tech</a></p>
 
                 <p>Have you ever looked at a website, an app, or a game and wondered, "How do they do that?" The answer
                     is often **code**. And while it might seem intimidating at first, taking the first step into the
@@ -72,7 +77,24 @@
             </article>
 
             <div class="comments-section">
-                <h3>Comments (0)</h3>
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <div class="form-group">
+                        <label for="comment-name">Name:</label>
+                        <input type="text" id="comment-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-email">Email (will not be published):</label>
+                        <input type="email" id="comment-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-text">Comment:</label>
+                        <textarea id="comment-text" name="comment" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-comment-button">Post Comment</button>
+                </form>
+
+                <h3>Previous Comments (0)</h3>
                 <p>No comments yet. Be the first to share your thoughts!</p>
             </div>
 
@@ -96,7 +118,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 My Awesome Blog | All Rights Reserved</p>
+        <p>&copy; 2025 My Awesome Blog | All Rights Reserved</p>
     </footer>
 </body>
 
