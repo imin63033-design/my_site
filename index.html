@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Awesome Blog</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7STJzLmrqmkB+3z0qVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -13,12 +16,22 @@
         <nav>
             <div class="logo">My Blog Title</div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="hero-image-container">
+        <img src="https://glumac.com/wp-content/uploads/2023/12/data.jpg"
+            alt="A futuristic digital bridge connecting different tech concepts, glowing lines, abstract data flow"
+            class="hero-banner-image">
+        <div class="hero-overlay">
+            <h1>Your Bridge to the Future of Tech!</h1>
+            <p>Navigating web development, tools, and insights with ease.</p>
+        </div>
+    </div>
 
     <main class="container">
         <section class="posts-section">
@@ -29,7 +42,7 @@
                 <p class="post-meta">Posted on October 4, 2024 by Diriba</p>
                 <p>This is a short summary of your first blog post. It should grab the reader's attention and make them
                     want to click 'Read More'. Focus on one main takeaway.</p>
-                <a href="the-first-step-to-coding.html"> Read More &raquo;</a>
+                <a href="the-first-step-to-coding.html" class="read-more">Read More</a>
             </article>
 
             <article class="post-card">
@@ -37,7 +50,7 @@
                 <p class="post-meta">Posted on September 28, 2024 by Diriba</p>
                 <p>A quick look at the best software and libraries that make web development faster and easier. You'll
                     love these simple tips!</p>
-                <a href="#" class="read-more">Read More &raquo;</a>
+                <a href="my-favorite-tools.html" class="read-more">Read More</a>
             </article>
 
         </section>
@@ -59,11 +72,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 My Awesome Blog | All Rights Reserved</p>
+        <p>&copy; 2025 My Awesome Blog | All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
