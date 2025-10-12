@@ -1,30 +1,23 @@
 // Function to show a simple welcome message when the page loads
 function showWelcomeMessage() {
-    console.log("Blog loaded successfully! Ready for interaction.");
-    // An actual alert you could use:
-    // alert("Welcome to the blog! We're glad you're here.");
+    console.log("Welcome to the blog! Your interactive features are ready.");
+    // You can uncomment the line below if you want an actual pop-up alert again,
+    // but typically for a live site, console messages are preferred.
+    // alert("Welcome to My Awesome Blog!");
 }
 
-// Function to handle the "Read More" button click
-function handleReadMoreClick(event) {
-    // Prevent the default action of the link (which is usually navigating to a new page)
-    event.preventDefault();
-
-    // Check if the clicked element has the 'read-more' class
-    if (event.target.classList.contains('read-more')) {
-        const postTitle = event.target.closest('.post-card').querySelector('h3').textContent;
-
-        // Use an alert to simulate navigating to the full post
-        alert(`You clicked 'Read More' for the post: "${postTitle}"\n\n(In a real blog, this would take you to the full article page.)`);
-    }
-}
-
-// Wait until the entire HTML document is fully loaded
+// When the entire HTML document is fully loaded, execute this function
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Show the initial welcome message
+    // Call the function to display the welcome message
     showWelcomeMessage();
 
-    // 2. Attach an event listener to the main content area (using event delegation)
-    const mainContent = document.querySelector('.container');
-    mainContent.addEventListener('click', handleReadMoreClick);
+    // *******************************************************************
+    // IMPORTANT: The previous JavaScript to handle "Read More" clicks
+    // and show an alert has been REMOVED.
+    //
+    // Now that you have actual HTML files for your blog posts (e.g.,
+    // 'the-first-step-to-coding.html', 'my-favorite-tools.html'),
+    // the browser will naturally navigate to those pages when you click
+    // the <a href="..."> links. This is the desired behavior for a blog.
+    // *******************************************************************
 });
