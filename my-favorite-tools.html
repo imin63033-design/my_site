@@ -89,27 +89,21 @@
                     development tools are in the comments below!</p>
             </article>
 
-            <div class="comments-section">
-                <h3>Leave a Comment</h3>
-                <form class="comment-form">
-                    <div class="form-group">
-                        <label for="comment-name">Name:</label>
-                        <input type="text" id="comment-name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment-email">Email (will not be published):</label>
-                        <input type="email" id="comment-email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment-text">Comment:</label>
-                        <textarea id="comment-text" name="comment" rows="6" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-comment-button">Post Comment</button>
-                </form>
-
-                <h3>Previous Comments (0)</h3>
-                <p>No comments yet. Be the first to share your thoughts!</p>
-            </div>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    // This is crucial for Disqus to identify THIS page correctly
+                    this.page.url = 'https://imin63033-design.github.io/my-site/my-favorite-tools.html';
+                    this.page.identifier = 'my-favorite-tools-post'; // A unique identifier for this specific post
+                };
+                (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://my-awesome-blog-2.disqus.com/embed.js'; // Your Disqus shortname
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
             <p><a href="index.html">&larr; Back to all posts</a></p>
         </section>
